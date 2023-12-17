@@ -16,7 +16,7 @@ const SceneOne = () => {
   }, []);
 
 
-  const image = {uri: 'https://i.imgur.com/bRAyJhk.png'};
+  const Image = {uri: 'https://i.imgur.com/bRAyJhk.png'};
   
   const particleConfig = {
     particles: {
@@ -88,7 +88,7 @@ const SceneOne = () => {
       }
     },
     interactivity: {
-      detect_on: "canvas",
+      detect_on: "Canvas",
       events: {
         onhover: {
           enable: false,
@@ -131,9 +131,9 @@ const SceneOne = () => {
 
   return (
     <View style={styles.container}>
-      <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+      <ImageBackground source={Image} resizeMode="cover" style={styles.image}>
       <Particles
-        canvasStyle={styles.particleContainer}
+        CanvasStyle={styles.particleContainer}
         init={particlesInit}
         loaded={particlesLoaded}
         options={particleConfig}
